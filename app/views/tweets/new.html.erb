@@ -1,0 +1,11 @@
+<div class="contents row">
+  <div class="container">
+    <h3>📮れっつごう📮</h3>
+    <%= form_with(model: @tweet, local: true) do |form| %>
+      <%= form.text_field :name, placeholder: "◎おなまえ◎" %>
+      <%= form.text_field :image, placeholder: "◎がぞう◎" %>
+      <%= form.text_area :text, placeholder: "◎ほんぶん◎", rows: "10" %>
+      <%= form.submit "◎ぽちっとな◎" %>
+    <% end %>
+  </div>
+</div>
